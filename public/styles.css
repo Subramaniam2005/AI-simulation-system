@@ -1,0 +1,186 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+  background: #f9fafb;
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+  height: 100vh;
+}
+
+/* APP */
+
+.app {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* BUTTON */
+
+button {
+  background: #111827;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1f2937;
+  transform: translateY(-1px);
+}
+
+/* CHAT CONTAINER */
+
+.chat-container {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  padding-right: 6px;
+}
+
+/* EMPTY STATE */
+
+.empty-state {
+  margin: auto;
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* MESSAGE */
+
+.message {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.03);
+
+  border-left: 5px solid transparent;
+}
+
+/* AVATAR */
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  flex-shrink: 0;
+}
+
+/* MESSAGE CONTENT */
+
+.message-content {
+  flex: 1;
+}
+
+.agent-name {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+.agent-text {
+  line-height: 1.6;
+  color: #374151;
+  font-size: 15px;
+}
+
+/* AGENT COLORS */
+
+.sai {
+  border-left-color: #9db8a5;
+}
+
+.sai .avatar {
+  background: #dce8df;
+  color: #4b6352;
+}
+
+.arjun {
+  border-left-color: #9eb6d9;
+}
+
+.arjun .avatar {
+  background: #dde7f5;
+  color: #496283;
+}
+
+.neha {
+  border-left-color: #e8bfae;
+}
+
+.neha .avatar {
+  background: #f7e3db;
+  color: #9b5f4c;
+}
+
+.rahul {
+  border-left-color: #cbb7e8;
+}
+
+.rahul .avatar {
+  background: #ede4f8;
+  color: #6f5894;
+}
+
+/* SCROLLBAR */
+
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}

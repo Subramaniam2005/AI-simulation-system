@@ -1,0 +1,17 @@
+{
+  "name": "multi-agent-simulation-system",
+  "version": "1.0.0",
+  "description": "Minimal full-stack app that simulates a conversation between two AI agents and analyzes it.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "kuzu": "^0.11.3",
+    "openai": "^6.38.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
